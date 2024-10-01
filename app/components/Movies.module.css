@@ -1,0 +1,82 @@
+/* Estilo para la cuadrícula de películas */
+.movieGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  background-color: #282924;
+}
+
+/* Estilo para cada tarjeta de película */
+.movieCard {
+  flex: 1 1 calc(20% - 20px); 
+  max-width: calc(30% - 20px); 
+  background-color: #3b3838;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; 
+  ;
+}
+
+/* Estilo para las imágenes de la tarjeta */
+.movieCard img {
+  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%; 
+  height: auto; 
+}
+
+/* Estilo para los botones de favoritos */
+.favButton, .removeButton {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer;
+  margin-top: 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s; 
+}
+
+/* Estilo para el botón de favoritos activo */
+.favButtonActive {
+  background-color: #ff3300;
+}
+
+/* Efecto hover para los botones */
+.favButton:hover, .removeButton:hover {
+  background-color: #464438;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+  .movieCard {
+    flex: 1 1 calc(25% - 20px); /* Cambia a 4 columnas en pantallas más pequeñas */
+    max-width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .movieCard {
+    flex: 1 1 calc(33.33% - 20px); /* Cambia a 3 columnas */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .movieCard {
+    flex: 1 1 calc(50% - 20px); /* Cambia a 2 columnas */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .movieCard {
+    flex: 1 1 100%; /* Cambia a 1 columna */
+    max-width: 100%;
+  }
+}

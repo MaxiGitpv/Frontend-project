@@ -1,0 +1,72 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content:space-around; 
+    background-color: black;
+  }
+  
+  .bannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    color: white; 
+    padding: 50px;
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    width: 35%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,
+  }
+  
+  .bannerImage {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .playButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00; 
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .playButton:hover{
+    background-color: #464438;
+  }
+
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 20; 
+  }
+  
+  .prevButton {
+    left: 10px; 
+  }
+  
+  .nextButton {
+    right: 10px; 
+  }
+  
