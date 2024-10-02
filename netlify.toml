@@ -1,6 +1,4 @@
-[build]
-command = "npm run build"
-publish = "out"
-
-[dev]
-command = "npm run start"
+[[redirects]]
+from ="/*"
+to = "/frontend-base/app/page.tsx"
+status = 200
