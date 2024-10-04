@@ -18,6 +18,12 @@
     "react-hook-form": "^7.53.0",
     "zod": "^3.23.8"
   },
+  "lint-staged": {
+  "*.js": "eslint --fix",
+  "*.ts": "eslint --fix",
+  "*.tsx": "eslint --fix"
+},
+
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
